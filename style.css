@@ -118,41 +118,46 @@ nav {
 }
 
 /* ✅ Footer */
-footer {
-  background: var(--navy);
-  color: var(--white);
-  padding: 2rem 1rem;
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Evenly spread sections */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
 }
 
-.footer-section h3 {
-  color: var(--turquoise);
+.footer-section {
+  flex: 1; /* Ensures each section takes equal space */
+  text-align: left; /* Aligns content neatly */
 }
 
-.footer-nav a {
-  color: var(--white);
-  transition: opacity 0.3s ease;
+.footer-nav {
+  display: flex;
+  gap: 1rem; /* Space between navigation links */
 }
 
-.footer-nav a:hover {
-  opacity: 1;
+.social-links {
+  display: flex;
+  gap: 1rem;
 }
 
-/* ✅ Responsive Styles */
-@media (min-width: 768px) {
-  .hero {
-    flex-direction: row;
-    text-align: left;
-    gap: 4rem;
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stacks for smaller screens */
+    text-align: center;
   }
 
-  .nav-menu {
-    flex-direction: row;
+  .footer-section {
+    text-align: center;
+  }
+
+  .social-links {
     justify-content: center;
   }
-}
 
-@media (min-width: 1024px) {
-  .hero h1 {
-    font-size: 3rem;
+  .footer-nav {
+    justify-content: center;
   }
 }
