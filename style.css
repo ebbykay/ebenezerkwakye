@@ -118,9 +118,17 @@ nav {
 }
 
 /* ✅ Footer */
+footer {
+  background: #003366; /* Restores Navy Blue */
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: auto;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .footer-content {
   display: flex;
-  justify-content: space-between; /* Evenly spread sections */
+  justify-content: space-between; /* Spreads sections horizontally */
   align-items: flex-start;
   flex-wrap: wrap;
   max-width: 1200px;
@@ -129,35 +137,17 @@ nav {
 }
 
 .footer-section {
-  flex: 1; /* Ensures each section takes equal space */
-  text-align: left; /* Aligns content neatly */
-}
-
-.footer-nav {
-  display: flex;
-  gap: 1rem; /* Space between navigation links */
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
+  flex: 1;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
   .footer-content {
-    flex-direction: column; /* Stacks for smaller screens */
+    flex-direction: column;
     text-align: center;
   }
 
   .footer-section {
     text-align: center;
-  }
-
-  .social-links {
-    justify-content: center;
-  }
-
-  .footer-nav {
-    justify-content: center;
   }
 }
