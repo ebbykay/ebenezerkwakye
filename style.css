@@ -475,3 +475,9 @@ nav ul li a:hover::after {
     justify-content: center;
   }
 }
+
+footer {
+  background-color: #003366; /* Navy blue as per your brand */
+  color: white;
+  padding: 2rem 1rem;
+}
