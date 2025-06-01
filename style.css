@@ -490,4 +490,12 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+footer .copyright {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  color: white;
+}
 
