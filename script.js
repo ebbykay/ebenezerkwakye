@@ -1,16 +1,23 @@
+// Replace your existing mobile nav JS with this:
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Navigation Toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    const navLinks = document.querySelectorAll('.nav-menu a');
-
-    if (navToggle && navMenu) {
-        // Toggle mobile menu
-        navToggle.addEventListener('click', function() {
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            document.body.classList.toggle('no-scroll');
-        });
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function() {
+      // Toggle aria-expanded for accessibility
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      
+      // Toggle classes
+      navMenu.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+      
+      // Animate hamburger icon
+      this.classList.toggle('active');
+    });
+  }
+});
 
         // Close menu when clicking on a link
         navLinks.forEach(link => {
