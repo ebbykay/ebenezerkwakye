@@ -3,94 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Ebenezer Kwakye - Data-driven solutions, automation tools, and innovative web applications">
   <title>Projects | Ebenezer Kwakye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <div class="background-dim"></div>
+  
+  <!-- Consistent Navbar -->
+  <nav>
+    <div class="nav-brand">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+        <polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+      <span>EK</span>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" data-text="Home">Home</a></li>
+      <li><a href="about.html" data-text="About">About</a></li>
+      <li><a href="skills.html" data-text="Skills">Skills</a></li>
+      <li><a href="projects.html" data-text="Projects" class="active">Projects</a></li>
+      <li><a href="blog.html" data-text="Blog">Blog</a></li>
+      <li><a href="contact.html" data-text="Contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<!-- Navigation -->
-<nav>
-  <div class="nav-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <ul class="nav-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="projects.html" class="active">Projects</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- Main Content -->
-<main>
-  <section class="hero">
-    <div class="hero-right">
-      <h1>My Projects</h1>
-      <p>Explore a selection of my most impactful work across data, innovation, education, and technology.</p>
-      <a href="https://linktr.ee/ebenezerkwakye" target="_blank" class="btn">View Full Portfolio</a>
+  <!-- Projects Hero -->
+  <section class="projects-hero">
+    <div class="hero-content">
+      <h1 class="section-title">My Projects</h1>
+      <p class="hero-description">
+        Explore a selection of my most impactful work across <span class="highlight">data analysis</span>, 
+        <span class="highlight">automation tools</span>, and <span class="highlight">web solutions</span>.
+      </p>
+      <a href="https://linktr.ee/ebenezerkwakye" target="_blank" class="btn btn-primary">
+        <span>View Full Portfolio</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
     </div>
   </section>
 
-  <section class="card-container">
-    <div class="card">
-      <img src="assets/images/project1.jpg" alt="Project 1" class="card-img">
-      <h3>Illegal Mining Impact Model</h3>
-      <p>A data-driven project modeling the effects of illegal mining using Python and visualization tools. Showcased at WIUC Ghana.</p>
-      <a href="#" class="btn alt">View Case Study</a>
-    </div>
-
-    <div class="card">
-      <img src="assets/images/project2.jpg" alt="Project 2" class="card-img">
-      <h3>Business Automation Tools</h3>
-      <p>Developed CRM prototypes and bots to automate workflow for Ghanaian SMEs using Airtable, Python, and Zapier integrations.</p>
-      <a href="#" class="btn alt">Explore Tools</a>
-    </div>
-
-    <div class="card">
-      <img src="assets/images/project3.jpg" alt="Project 3" class="card-img">
-      <h3>Neczux Global Branding Suite</h3>
-      <p>Led the UI/UX design and deployment of custom branding tools and web solutions for over 20 startups under Neczux Global Group.</p>
-      <a href="#" class="btn alt">View Showcase</a>
-    </div>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer>
-  <div class="footer-content">
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p>kwakyeebenezer3520@gmail.com</p>
-      <p>+233503737821</p>
-    </div>
-    <div class="footer-section">
-      <h3>Connect</h3>
-      <div class="social-links">
-        <a href="https://github.com/ebbykay" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/ebenezer-kwakye1" target="_blank">LinkedIn</a>
-        <a href="https://wa.me/233503737821" target="_blank">WhatsApp</a>
+  <!-- Projects Grid -->
+  <section class="projects-grid">
+    <div class="project-card animate-on-scroll">
+      <div class="project-image">
+        <img src="assets/images/project1.jpg" alt="Illegal Mining Impact Model">
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">Research</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Illegal Mining Impact Model</h3>
+        <p>A data-driven project modeling the socioeconomic and environmental effects of illegal mining using Python and advanced visualization tools. Showcased at WIUC Ghana.</p>
+        <div class="project-links">
+          <a href="#" class="btn btn-secondary">
+            <span>Case Study</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </a>
+          <a href="#" class="btn btn-secondary">
+            <span>Live Demo</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="footer-section">
-      <h3>Navigation</h3>
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>&copy; 2025 Ebenezer Kwakye. All rights reserved.</p>
-  </div>
-</footer>
 
-<script src="script.js"></script>
+    <div class="project-card animate-on-scroll">
+      <div class="project-image">
+        <img src="assets/images/project2.jpg" alt="Business Automation Tools">
+        <div class="project-tags">
+          <span class="tag">Airtable</span>
+          <span class="tag">Python</span>
+          <span class="tag">Zapier</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Business Automation Tools</h3>
+        <p>Developed CRM prototypes and workflow automation bots for Ghanaian SMEs, reducing manual processes by 60% using Airtable, Python, and Zapier integrations.</p>
+        <div class="project-links">
+          <a href="#" class="btn btn-secondary">
+            <span>Explore Tools</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card animate-on-scroll">
+      <div class="project-image">
+        <img src="assets/images/project3.jpg" alt="Neczux Global Branding Suite">
+        <div class="project-tags">
+          <span class="tag">UI/UX</span>
+          <span class="tag">Web Design</span>
+          <span class="tag">Branding</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Neczux Global Branding Suite</h3>
+        <p>Led the design and deployment of custom branding tools and web solutions for over 20 African startups under Neczux Global Group, improving client engagement by 45%.</p>
+        <div class="project-links">
+          <a href="#" class="btn btn-secondary">
+            <span>View Showcase</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Designed & Built by Ebenezer Kwakye</p>
+      </div>
+      <div class="footer-right">
+        <div class="social-links">
+          <a href="https://github.com/ebbykay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/ebenezer-kwakye1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://wa.me/233503737821" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; <span class="copyright-year">2025</span> Ebenezer Kwakye. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
 </body>
 </html>
