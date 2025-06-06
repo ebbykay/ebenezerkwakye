@@ -3,107 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Ebenezer Kwakye</title>
+  <meta name="description" content="About Ebenezer Kwakye - IT & Data Specialist creating data-driven solutions through analysis, machine learning, and development">
+  <title>About | Ebenezer Kwakye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <div class="background-dim"></div>
+  
+  <!-- Consistent Navbar -->
+  <nav>
+    <div class="nav-brand">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+        <polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+      <span>EK</span>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" data-text="Home">Home</a></li>
+      <li><a href="about.html" data-text="About" class="active">About</a></li>
+      <li><a href="skills.html" data-text="Skills">Skills</a></li>
+      <li><a href="https://linktr.ee/ebenezerkwakye" data-text="Projects">Projects</a></li>
+      <li><a href="blog.html" data-text="Blog">Blog</a></li>
+      <li><a href="contact.html" data-text="Contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <div class="nav-toggle">
-    <span></span><span></span><span></span>
-  </div>
-  <ul class="nav-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="https://linktr.ee/ebenezerkwakye">Projects</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<main class="about-main">
-  <section class="about-container">
-    <div class="about-hero">
-      <div class="about-image-wrapper">
-        <img src="assets/images/profile.png" alt="Ebenezer Kwakye Portrait">
+  <main class="about-main">
+    <section class="about-container">
+      <!-- Hero Section -->
+      <div class="about-hero">
+        <div class="about-image-wrapper">
+          <img src="assets/images/profile.png" alt="Ebenezer Kwakye Portrait" class="profile-img">
+          <div class="profile-border"></div>
+        </div>
+        <div class="about-intro">
+          <h1 class="section-title">About Me</h1>
+          <h2 class="section-subtitle">Data Analyst × Tech Educator × Innovation Consultant</h2>
+          <p class="hero-description">
+            I'm Ebenezer Kwakye — a dynamic blend of <span class="highlight">Data Analyst</span>, <span class="highlight">Tech Educator</span>, and <span class="highlight">Innovation Consultant</span>. I'm passionate about using computing and actuarial science to empower businesses, students, and communities across Africa.
+          </p>
+          <div class="hero-cta">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Get In Touch</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="about-intro">
-        <h1>About Me</h1>
-        <p class="lead-text">
-          I'm Ebenezer Kwakye — a dynamic blend of <strong>Data Analyst</strong>, <strong>Tech Educator</strong>, and <strong>Innovation Consultant</strong>. I’m passionate about using computing and actuarial science to empower businesses, students, and communities across Africa.
-        </p>
+
+      <!-- Mission Section -->
+      <div class="bio-section">
         <p>
-          As the founder of <strong>Neczux Global Group</strong>, I build digital solutions, streamline operations through automation, and develop learning systems tailored to entrepreneurs and students. I’m also deeply involved in mentoring, community building, and transforming visions into scalable tech tools.
+          As the founder of <span class="highlight">Neczux Global Group</span>, I build digital solutions, streamline operations through automation, and develop learning systems tailored to entrepreneurs and students. I'm also deeply involved in mentoring, community building, and transforming visions into scalable tech tools.
         </p>
         <p>
           My mission is to make data-driven innovation accessible to young Africans, while using my faith and creativity to mentor future leaders.
         </p>
       </div>
-    </div>
 
-    <div class="info-cards">
-      <div class="info-card">
-        <div class="card-icon">🎯</div>
-        <h3>GCGO Goal</h3>
-        <p>I’m committed to achieving <strong>Access to Quality Education</strong> through innovative tools, mentorship, and community learning.</p>
+      <!-- Info Cards -->
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="card-icon">🎯</div>
+          <h3>GCGO Goal</h3>
+          <p>I'm committed to achieving <strong>Access to Quality Education</strong> through innovative tools, mentorship, and community learning.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">💼</div>
+          <h3>Specialization</h3>
+          <p>Currently specializing in <strong>Data Analytics and Python</strong> with a progression toward <strong>Machine Learning</strong> and <strong>AWS Cloud</strong>.</p>
+        </div>
+        <div class="info-card">
+          <div class="card-icon">🌍</div>
+          <h3>Vision</h3>
+          <p>To empower the next generation of African changemakers through technology, education, and faith-driven leadership.</p>
+        </div>
       </div>
-      <div class="info-card">
-        <div class="card-icon">💼</div>
-        <h3>Specialization</h3>
-        <p>Currently specializing in <strong>Data Analytics and Python</strong> with a progression toward <strong>Machine Learning</strong> and <strong>AWS Cloud</strong>.</p>
-      </div>
-      <div class="info-card">
-        <div class="card-icon">🌍</div>
-        <h3>Vision</h3>
-        <p>To empower the next generation of African changemakers through technology, education, and faith-driven leadership.</p>
-      </div>
-    </div>
 
-    <div class="about-intro">
-      <h2>Fun Fact</h2>
-      <p>
-        An interesting fact? My motto: <em>"Turning holy inspiration into code."</em>
-      </p>
-      <p>Want to see my work? Check out my <a href="projects.html">projects</a> and <a href="blog.html">blog</a>.</p>
-    </div>
-  </section>
-</main>
+      <!-- Fun Fact Section -->
+      <div class="fun-fact">
+        <h2 class="section-subtitle">Fun Fact</h2>
+        <p class="quote">
+          "Turning holy inspiration into code."
+        </p>
+        <p>Want to see my work? Check out my <a href="https://linktr.ee/ebenezerkwakye" class="text-link">projects</a> and <a href="blog.html" class="text-link">blog</a>.</p>
+      </div>
+    </section>
+  </main>
 
-<footer>
-  <div class="footer-content">
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p>kwakyeebenezer3520@gmail.com</p>
-      <p>+233503737821</p>
-    </div>
-    <div class="footer-section">
-      <h3>Connect</h3>
-      <div class="social-links">
-        <a href="https://github.com/ebbykay" target="_blank" aria-label="GitHub">GitHub</a>
-         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
-        <a href="https://linkedin.com/in/ebenezer-kwakye1" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        <a href="https://wa.me/233503737821" target="_blank" aria-label="WhatsApp">WhatsApp</a>
-         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <!-- Consistent Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Designed & Built by Ebenezer Kwakye</p>
+      </div>
+      <div class="footer-right">
+        <div class="social-links">
+          <a href="https://github.com/ebbykay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/ebenezer-kwakye1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://wa.me/233503737821" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="footer-section">
-      <h3>Navigation</h3>
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li> 
-        <li><a href="about.html">About</a></li> 
-        <li><a href="skills.html">Skills</a></li> 
-        <li><a href="https://linktr.ee/ebenezerkwakye">Projects</a></li> 
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
+    <div class="copyright">
+      <p>&copy; <span class="copyright-year">2025</span> Ebenezer Kwakye. All rights reserved.</p>
     </div>
-  </div>
-  <div class="copyright">
-    <p>&copy; 2025 Ebenezer Kwakye. All rights reserved.</p>
-  </div>
-</footer>
-<script src="script.js"></script>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
 </body>
 </html>
