@@ -418,6 +418,18 @@ footer {
   height: 1.3rem;
 }
 
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Adjust spacing */
+}
+
+.social-row {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
 .copyright {
   text-align: center;
   margin-top: 3rem;
