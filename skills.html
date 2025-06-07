@@ -2,110 +2,219 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Skills – Ebenezer Kwakye</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ebenezer Kwakye's skills in data science, web development, automation, and strategic thinking">
+  <title>Skills | Ebenezer Kwakye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <div class="background-dim"></div>
+  
+  <!-- Consistent Navbar -->
+  <nav>
+    <div class="nav-brand">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+        <polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+      <span>EK</span>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" data-text="Home">Home</a></li>
+      <li><a href="about.html" data-text="About">About</a></li>
+      <li><a href="skills.html" data-text="Skills" class="active">Skills</a></li>
+      <li><a href="https://linktr.ee/ebenezerkwakye" data-text="Projects">Projects</a></li>
+      <li><a href="blog.html" data-text="Blog">Blog</a></li>
+      <li><a href="contact.html" data-text="Contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <div class="nav-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <ul class="nav-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="https://linktr.ee/ebenezerkwakye">Projects</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<main>
-  <section class="hero">
-    <div class="hero-right">
-      <h1>Skills & Tools</h1>
-      <p class="lead-text">
-        Here's a snapshot of the key technologies, tools, and soft skills that fuel my work as a Data Analyst, Developer, Innovation & Investments Strategist.
+  <!-- Skills Hero -->
+  <section class="skills-hero">
+    <div class="hero-content">
+      <h1 class="section-title">Skills & Expertise</h1>
+      <h2 class="section-subtitle">Data × Development × Strategy</h2>
+      <p class="hero-description">
+        A blend of technical capabilities and strategic thinking that drives impactful solutions across multiple domains.
       </p>
     </div>
   </section>
 
-  <section class="card-container">
-    <!-- Technical Skills -->
-    <div class="card">
-      <h3>Data Science & Analytics</h3>
-      <p>Python, Pandas, NumPy, Matplotlib, SQL, Excel, Power BI, Data Cleaning, Exploratory Data Analysis (EDA), Visualization, Regression Analysis</p>
-    </div>
+  <!-- Skills Grid -->
+  <section class="skills-container">
+    <!-- Technical Skills Section -->
+    <div class="skills-category animate-on-scroll">
+      <h3 class="category-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        Technical Skills
+      </h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Data Science & Analytics</h4>
+          <div class="skill-items">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Data Cleaning</span>
+            <span class="skill-tag">EDA</span>
+            <span class="skill-tag">Visualization</span>
+          </div>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
 
-    <div class="card">
-      <h3>Web Development</h3>
-      <p>HTML5, CSS3, JavaScript, GitHub Pages, UI/UX Design Principles, Responsive Design, WordPress, Figma (UI Prototyping)</p>
-    </div>
+        <div class="skill-card">
+          <h4>Web Development</h4>
+          <div class="skill-items">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">GitHub Pages</span>
+            <span class="skill-tag">UI/UX Principles</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+        </div>
 
-    <div class="card">
-      <h3>Automation & Business Tools</h3>
-      <p>Zapier, Make, Notion, Canva, Google Workspace, CRM Tools, Salesforce (in progress), Airtable</p>
-    </div>
-
-    <!-- Soft Skills -->
-    <div class="card">
-      <h3>Professional Skills</h3>
-      <p>Leadership, Communication, Team Collaboration, Public Speaking, Mentoring, Strategic Thinking, Innovation, Creativity, Time Management</p>
-    </div>
-
-    <div class="card">
-      <h3>Actuarial & Financial Skills</h3>
-      <p>Probability Theory, Life Contingencies, Interest Theory, Risk Management, Financial Mathematics, Excel Modeling, Data-Driven Decision Making</p>
-    </div>
-
-    <div class="card">
-      <h3>Ongoing Learning</h3>
-      <p>ALX Data Science Track (Python, ML, AWS upcoming), Self-directed courses, Peer Projects, Mentorship, Research in Tech & Finance</p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="footer-content">
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p>kwakyeebenezer3520@gmail.com</p>
-      <p>+233 503 737 821</p>
-    </div>
-    <div class="footer-section">
-      <h3>Connect</h3>
-      <div class="social-links">
-        <a href="https://github.com/ebbykay" target="_blank" aria-label="GitHub">
-          <img src="assets/icons/github.svg" alt="GitHub" />
-        </a>
-        <a href="https://linkedin.com/in/ebenezer-kwakye1" target="_blank" aria-label="LinkedIn">
-          <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="https://wa.me/233503737821" target="_blank" aria-label="WhatsApp">
-          <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
-        </a>
+        <div class="skill-card">
+          <h4>Automation & Tools</h4>
+          <div class="skill-items">
+            <span class="skill-tag">Zapier</span>
+            <span class="skill-tag">Make</span>
+            <span class="skill-tag">Airtable</span>
+            <span class="skill-tag">Notion</span>
+            <span class="skill-tag">Google Workspace</span>
+            <span class="skill-tag">CRM Tools</span>
+          </div>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-section">
-      <h3>Navigation</h3>
-      <ul class="footer-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="https://linktr.ee/ebenezerkwakye">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>&copy; 2025 Ebenezer Kwakye. All rights reserved.</p>
-  </div>
-</footer>
 
-<script src="script.js"></script>
+    <!-- Professional Skills Section -->
+    <div class="skills-category animate-on-scroll">
+      <h3 class="category-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+        Professional Skills
+      </h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Leadership & Communication</h4>
+          <div class="skill-items">
+            <span class="skill-tag">Team Leadership</span>
+            <span class="skill-tag">Public Speaking</span>
+            <span class="skill-tag">Mentoring</span>
+            <span class="skill-tag">Collaboration</span>
+            <span class="skill-tag">Strategic Thinking</span>
+          </div>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 95%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h4>Financial Expertise</h4>
+          <div class="skill-items">
+            <span class="skill-tag">Risk Management</span>
+            <span class="skill-tag">Financial Modeling</span>
+            <span class="skill-tag">Investment Strategy</span>
+            <span class="skill-tag">Data-Driven Decisions</span>
+          </div>
+          <div class="skill-progress">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ongoing Learning Section -->
+    <div class="skills-category animate-on-scroll">
+      <h3 class="category-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        </svg>
+        Ongoing Development
+      </h3>
+      <div class="learning-items">
+        <div class="learning-item">
+          <h4>ALX Data Science Track</h4>
+          <p>Advanced Python, Machine Learning, AWS Cloud</p>
+          <div class="progress-container">
+            <div class="progress-bar learning" style="width: 60%"></div>
+            <span>In Progress</span>
+          </div>
+        </div>
+        <div class="learning-item">
+          <h4>Peer Projects & Research</h4>
+          <p>Tech & Finance integration, Automation Solutions</p>
+          <div class="progress-container">
+            <div class="progress-bar learning" style="width: 75%"></div>
+            <span>Continuous</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>Designed & Built by Ebenezer Kwakye</p>
+      </div>
+      <div class="footer-right">
+        <div class="social-links">
+          <a href="https://github.com/ebbykay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/ebenezer-kwakye1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://wa.me/233503737821" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; <span class="copyright-year">2025</span> Ebenezer Kwakye. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
 </body>
 </html>
