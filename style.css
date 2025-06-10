@@ -1248,3 +1248,36 @@ footer {
   margin-bottom: 0.8rem;
   font-size: 0.95rem;
 }
+/* Projects Hero Centering */
+.projects-hero {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content.centered-text {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-description {
+  margin: 1rem auto 2rem;
+  max-width: 600px;
+}
+
+/* Ensure button is centered */
+.projects-hero .btn {
+  margin: 0 auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-content.centered-text {
+    padding: 0 1.5rem;
+  }
+  
+  .hero-description {
+    margin: 1rem auto 1.5rem;
+  }
+}
