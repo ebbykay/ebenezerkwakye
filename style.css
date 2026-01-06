@@ -1285,10 +1285,3 @@ footer {
   display: flex;
   align-items: center;
 }
-
-.nav-logo {
-  height: 40px;      /* adjust: 32px – 48px is ideal */
-  width: auto;
-  object-fit: contain;
-}
-
