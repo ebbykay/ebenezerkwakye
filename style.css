@@ -1281,3 +1281,14 @@ footer {
     margin: 1rem auto 1.5rem;
   }
 }
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 40px;      /* adjust: 32px – 48px is ideal */
+  width: auto;
+  object-fit: contain;
+}
+
