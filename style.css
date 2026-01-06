@@ -1285,3 +1285,21 @@ footer {
   display: flex;
   align-items: center;
 }
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-logo {
+  height: 36px;          /* Match About page visual weight */
+  width: auto;
+  object-fit: contain;
+}
