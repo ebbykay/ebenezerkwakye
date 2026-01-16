@@ -1299,10 +1299,11 @@ footer {
 }
 
 .nav-logo {
-  height: 90px;          /* Match About page visual weight */
+  height: 50px;          /* Match About page visual weight */
   width: auto;
   object-fit: contain;
 }
+
 
 
 
